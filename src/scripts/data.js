@@ -2,15 +2,13 @@
    DATA.JS - Datos de Ejemplo
    Patrón: Data Repository
    =========================================== */
-import audi from '../img/audi.jpeg';
-import audifonos from '../img/audifonos.webp';
 
 const PRODUCTS_DATA = [
     {
         id: 1,
         title: 'Producto Premium 1',
         description: 'Descripción detallada del producto número 1 con características excepcionales.',
-        image: audi,
+        image: './src/img/audi.jpeg',
         price: '$99.99',
         category: 'Premium',
         badge: 'Destacado'
@@ -19,7 +17,7 @@ const PRODUCTS_DATA = [
         id: 2,
         title: 'Producto Premium 2',
         description: 'Descripción detallada del producto número 2 con excelentes reseñas.',
-        image: audifonos,
+        image: './src/img/audifonos.webp',
         price: '$79.99',
         category: 'Standard',
         badge: 'Nuevo'
@@ -28,7 +26,7 @@ const PRODUCTS_DATA = [
         id: 3,
         title: 'Producto Premium 3',
         description: 'Descripción detallada del producto número 3 con mejor relación calidad-precio.',
-        image: audi,
+        image: './src/img/audi.jpeg',
         price: '$59.99',
         category: 'Economy',
         badge: 'Oferta'
@@ -37,7 +35,7 @@ const PRODUCTS_DATA = [
         id: 4,
         title: 'Producto Premium 4',
         description: 'Descripción detallada del producto número 4 con innovación de última generación.',
-        image: audifonos,
+        image: './src/img/audifonos.webp',
         price: '$129.99',
         category: 'Premium',
         badge: null
@@ -46,7 +44,7 @@ const PRODUCTS_DATA = [
         id: 5,
         title: 'Producto Premium 5',
         description: 'Descripción detallada del producto número 5 recomendado por expertos.',
-        image: audi,
+        image: './src/img/audi.jpeg',
         price: '$89.99',
         category: 'Premium',
         badge: 'Top Ventas'
@@ -55,7 +53,7 @@ const PRODUCTS_DATA = [
         id: 6,
         title: 'Producto Premium 6',
         description: 'Descripción detallada del producto número 6 con garantía extendida.',
-        image: audifonos,
+        image: './src/img/audifonos.webp',
         price: '$74.99',
         category: 'Standard',
         badge: null
