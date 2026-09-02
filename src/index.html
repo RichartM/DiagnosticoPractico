@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Responsivo - Web & Mobile</title>
+    
+    <!-- Bootstrap Local -->
+    <link rel="stylesheet" href="../vendors/bootstrap/bootstrap.min.css">
+    
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/responsive.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#home">MyApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main id="app">
+        <!-- VISTA WEB: Cards en Grid -->
+        <section id="vista-web" class="vista-contenedor d-none d-lg-block py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 fw-bold">Vista Web (Desktop)</h2>
+                <div id="grid-desktop" class="row g-4">
+                    <!-- Las tarjetas se cargarán aquí vía JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- VISTA TABLET: Cards en 2 columnas -->
+        <section id="vista-tablet" class="vista-contenedor d-none d-md-block d-lg-none py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 fw-bold">Vista Tablet</h2>
+                <div id="grid-tablet" class="row g-4">
+                    <!-- Las tarjetas se cargarán aquí vía JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- VISTA MOBILE: Lista -->
+        <section id="vista-mobile" class="vista-contenedor d-md-none py-5">
+            <div class="container-fluid px-3">
+                <h2 class="text-center mb-4 fw-bold">Vista Mobile (Lista)</h2>
+                <div id="lista-mobile" class="mobile-list">
+                    <!-- Los elementos de lista se cargarán aquí vía JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2024 Proyecto Responsivo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="../vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts Personalizados -->
+    <script src="./src/scripts/data.js"></script>
+    <script src="./src/scripts/renderer.js"></script>
+    <script src="./src/scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+/* ==========================================
+   RESPONSIVE DESIGN - MEDIA QUERIES
+   =========================================== */
+
+/* ============ TABLET (768px - 991px) ============ */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    #grid-tablet .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* ============ DESKTOP (992px y superior) ============ */
+@media (min-width: 992px) {
+    #grid-desktop .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .navbar-nav {
+        gap: 0.5rem;
+    }
+}
+
+/* ============ EXTRA LARGE (1400px y superior) ============ */
+@media (min-width: 1400px) {
+    #grid-desktop .row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .container {
+        max-width: 1320px;
+    }
+}
+
+/* ============ MOBILE (hasta 767px) ============ */
+@media (max-width: 767.98px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .container-fluid {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    #lista-mobile {
+        width: 100%;
+    }
+
+    .mobile-list-item {
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .mobile-list-item-image {
+        height: 150px;
+        margin-bottom: 0.75rem;
+    }
+
+    .mobile-list-item-title {
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .mobile-list-item-text {
+        font-size: 0.85rem;
+        margin-bottom: 0.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h2::after {
+        margin: 0.75rem auto 0;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-footer {
+        padding: 0.75rem 1rem;
+    }
+}
+
+/* ============ SMALL MOBILE (hasta 480px) ============ */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .mobile-list-item {
+        padding: 0.75rem;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .mobile-list-item-image {
+        height: 120px;
+    }
+}
+
+/* ============ ANIMACIONES Y TRANSICIONES ============ */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ============ MODO OSCURO (opcional) ============ */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+
+    .card {
+        background-color: #2d2d2d;
+        color: #e0e0e0;
+    }
+
+    .card-text {
+        color: #b0b0b0;
+    }
+
+    .mobile-list-item {
+        background-color: #2d2d2d;
+        color: #e0e0e0;
+    }
+}
